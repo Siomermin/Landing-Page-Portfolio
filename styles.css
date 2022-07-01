@@ -45,12 +45,11 @@ header {
 }
 
 ::selection {
-  /*background-color: #db0000;*/
-  background-color: #F45B69;
+  background-color: #e05376;
 }
 
 a::selection {
-  background-color: #000000;
+  background-color: #eeaaaa;
 }
 
 nav {
@@ -78,8 +77,7 @@ nav {
 }
 
 .list-items a {
-  /*text-decoration: #db0000;*/
-  text-decoration: #F45B69;
+  text-decoration: #d1345b;
   color: #000000;
   font-size: 45px;
 }
@@ -89,16 +87,23 @@ nav {
   background-color: #f8f7f9;
   display: flex;
   flex-direction: row-reverse;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-content: center;
   align-items: center;
 }
 
 .hero__section-img img {
+  border: 2px solid #000000;
   margin-top: 50px;
   margin-bottom: 50px;
-  height: 700px;
-  width: 650px;
+  height: 460px;
+  width: 450px;
+}
+
+.random-facts {
+  color: #d1345b;
+  font-size: 20px;
+  transform: rotate(40deg);
 }
 
 .hero__section-tagline {
@@ -111,6 +116,15 @@ nav {
 
 .hero__section-tagline h1 {
   font-size: 55px;
+  color: #000000;
+  text-decoration: none;
+  font-family: monospace;
+}
+
+.hero__section-tagline h1:hover {
+  cursor: default;
+  transition: 0.5s;
+  color: #d1345b;
 }
 
 .hero__section-tagline span {
@@ -152,10 +166,10 @@ nav {
   color: #252525;
 }
 
-.hero__section-bio {
+#hero__section-bio {
   border-top: 1px solid #000000;
   height: calc(100vh - 80px);
-  background-color: #fff;
+  background-color: #efefef;
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -163,7 +177,9 @@ nav {
   align-items: center;
 }
 
-.hero__section-bio h2 {
+#hero__section-bio h2 {
+  text-decoration: underline;
+  text-decoration-color: #d1345b;
   margin-top: 20px;
   font-size: 45px;
   font-weight: 200;
@@ -185,15 +201,13 @@ nav {
   letter-spacing: 0.2px;
 }
 
-.hero__section-bio a {
+#hero__section-bio a {
   text-decoration: underline;
   text-decoration-thickness: 2px;
-  /*text-decoration-color: #db00009d;
-  color: #db0000;*/
-  text-decoration-color: #F45B69;
-  color: #F45B69;
+  text-decoration-color: #d1345b;
+  color: #d1345b;
 }
 
-.hero__section-bio a:hover {
+#hero__section-bio a:hover {
   opacity: 0.7;
 }
