@@ -82,6 +82,20 @@ nav {
   font-size: 45px;
 }
 
+.checkbutton {
+  font-size: 30px;
+  color: #000000;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check{
+  display: none;
+}
+
 .hero__section {
   height: calc(100vh - 80px);
   background-color: #f8f7f9;
@@ -98,12 +112,6 @@ nav {
   margin-bottom: 50px;
   height: 460px;
   width: 450px;
-}
-
-.random-facts {
-  color: #d1345b;
-  font-size: 20px;
-  transform: rotate(40deg);
 }
 
 .hero__section-tagline {
@@ -211,3 +219,124 @@ nav {
 #hero__section-bio a:hover {
   opacity: 0.7;
 }
+
+/* MEDIA QUERYS */
+
+@media (max-width: 1200px) {
+
+  .checkbutton {
+    display: block;
+  }
+
+  nav ul {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 90px 0;
+    line-height: 30px;
+  }
+
+  nav ul li a {
+    font-size: 70px;
+    color: #000000;
+  }
+
+  .checkbutton:checked ~ nav ul {
+    left: 0;
+  }
+  .hero__section-img img {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: 390px;
+    width: 380px;
+  }
+
+  .hero__section-tagline h1 {
+    font-size: 47px;
+  }
+
+  .hero__section-tagline span {
+    font-size: 20px;
+  }
+
+  .hero__section-buttons {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero__section-buttons button {
+    margin-bottom: 5px;
+  }
+
+  #hero__section-bio h2 {
+    font-size: 35px;
+  }
+
+  .list-bio li {
+    font-size: 22px;
+  }
+
+}
+
+@media (max-width: 950px) {
+  .hero__section-img img {
+    height: 340px;
+    width: 330px;
+  }
+}
+
+@media (max-width: 750px) {
+  .hero__section-img img {
+    height: 300px;
+    width: 290px;
+  }
+
+  .hero__section-tagline h1 {
+    font-size: 37px;
+  }
+
+  .hero__section-tagline span {
+    font-size: 17px;
+  }
+
+  .hero__section-buttons button {
+    margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 750px) {
+  .hero__section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero__section-buttons button {
+    margin-left: 70px;
+  }
+  
+  #hero__section-bio h2 {
+    font-size: 30px;
+  }
+
+  .list-bio li {
+    font-size: 20px;
+  }
+}
+
