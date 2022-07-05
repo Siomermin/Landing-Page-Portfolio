@@ -78,7 +78,7 @@ nav {
   font-size: 35px;
 }
 
-.checkbutton {
+.checkbtn{
   font-size: 30px;
   color: #000000;
   float: right;
@@ -88,7 +88,7 @@ nav {
   display: none;
 }
 
-#check{
+#check {
   display: none;
 }
 
@@ -220,11 +220,11 @@ nav {
 
 @media (max-width: 1200px) {
 
-  .checkbutton {
+  .checkbtn{
     display: block;
   }
 
-  nav ul {
+  .list-items {
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -238,20 +238,21 @@ nav {
     transition: all 0.5s;
   }
 
-  nav ul li {
+  .list-items li {
     display: block;
-    margin: 90px 0;
+    margin: 80px 0;
     line-height: 30px;
   }
 
-  nav ul li a {
+  .list-items li a {
     font-size: 70px;
     color: #000000;
   }
 
-  .checkbutton:checked ~ nav ul {
+  #check:checked~.list-items {
     left: 0;
   }
+
   .hero__section-img img {
     margin-top: 30px;
     margin-bottom: 30px;
@@ -296,8 +297,9 @@ nav {
   }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 783px) {
   .hero__section-img img {
+    margin-top: 80px;
     height: 300px;
     width: 290px;
   }
@@ -313,9 +315,7 @@ nav {
   .hero__section-buttons button {
     margin-bottom: 5px;
   }
-}
 
-@media (max-width: 750px) {
   .hero__section {
     display: flex;
     flex-direction: column;
@@ -326,7 +326,7 @@ nav {
   .hero__section-buttons button {
     margin-left: 70px;
   }
-  
+
   #hero__section-bio h2 {
     font-size: 30px;
   }
@@ -336,3 +336,9 @@ nav {
   }
 }
 
+@media (max-width: 570px) {
+  .list-bio li {
+    line-height: 1.57em;
+    letter-spacing: 0.2px;
+  }
+}
