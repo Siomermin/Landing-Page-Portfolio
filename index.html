@@ -1,76 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="/imgs/icon.png" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      rel="stylesheet"
+    />
+    <title>Fermín González</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="shortcut icon" href="/imgs/icon.png" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet" />
-  <title>Fermín González</title>
-</head>
-
-<body>
-  <header>
-    <nav>
-      <div class="nav__title">
-        <a href="/"> FG </a>
-      </div>
-      <input type="checkbox" id="check" />
-      <label for="check" class="checkbtn">
-        <i class="fa-solid fa-bars"></i>
-      </label>
-      <ul class="list-items">
-        <li class="nav__about"><a href="#hero__section-bio"> About </a></li>
-        <li class="nav__work"><a href="index.html"> Work </a></li>
-        <li class="nav__contact"><a href="index.html"> Contact </a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <section class="hero__section">
-      <div class="hero__section-tagline">
-        <h1>Fermín González</h1>
-        <span> Student, Software Developer. </span>
-        <div class="hero__section-buttons">
-          <button>
-            <a href="https://github.com/Siomermin" target="_blank">
-              Github ↗
-            </a>
-          </button>
-          <button>
-            <a href="https://www.linkedin.com/in/fermingon/" target="_blank">
-              Linkedin ↗
-            </a>
-          </button>
+  <body>
+    <header>
+      <nav>
+        <div class="nav__title">
+          <a href="/"> FG </a>
+        </div>
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+        <ul class="list-items">
+          <li class="nav__about"><a href="#hero__section-bio"> About </a></li>
+          <li class="nav__work"><a href="#skills__section"> Skills </a></li>
+          <li class="nav__contact">
+            <a href="#contact__section"> Contact </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hero__section">
+        <div class="hero__section-tagline">
+          <h1>Fermín González</h1>
+          <span> Student, Software Developer. </span>
+          <div class="hero__section-buttons">
+            <button>
+              <a href="https://github.com/Siomermin" target="_blank">
+                Github ↗
+              </a>
+            </button>
+            <button>
+              <a href="https://www.linkedin.com/in/fermingon/" target="_blank">
+                Linkedin ↗
+              </a>
+            </button>
+          </div>
+        </div>
+        <div class="hero__section-img">
+          <img src="imgs/yo.jpg" alt="yo" />
+        </div>
+      </section>
+      <section id="hero__section-bio">
+        <h2>About</h2>
+        <ul class="list-bio">
+          <li>
+            Fermín is currently a 1st-year programming student at the
+            <a
+              class="link"
+              href="http://www.sistemas-utnfra.com.ar/#/home"
+              target="_blank"
+              >UTN FRA</a
+            >
+            and also a fullstack web development student at
+            <a class="link" href="https://nucba.com.ar/codingbootcamp">NUCBA</a
+            >.
+          </li>
+          <li>
+            He is currently working with C# making desktop applications using
+            .NET and Windows Forms, and creating his first static websites with
+            HTML and CSS, that soon will be posted over
+            <a class="link" href="/">here</a>...
+          </li>
+        </ul>
+      </section>
+    </main>
+    <section id="skills__section">
+      <h2>Skills</h2>
+      <div class="card__container">
+        <div class="card">
+          <img src="/imgs/html5-without-wordmark-black-white.svg" alt="" />
+          <h3>HTML5</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam
+            ducimus officia nihil, eos aperiam at eum.
+          </p>
+        </div>
+        <div class="card">
+          <img src="/imgs/css-3-seeklogo.com.svg" alt="" />
+          <h3>CSS3</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam
+            ducimus officia nihil, eos aperiam at eum.
+          </p>
+        </div>
+        <div class="card" id="js__card">
+          <img src="/imgs/javascript-seeklogo.com.svg" alt="" />
+          <h3>JavaScript</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit culpa
+            earum fugiat obcaecati impedit voluptate exercitationem.
+          </p>
         </div>
       </div>
-      <div class="hero__section-img">
-        <img src="imgs/yo.jpg" alt="yo" />
+    </section>
+    <section id="contact__section">
+      <div class="contact_section-info">
+        <h2>Contact</h2>
+        <span> Based in Buenos Aires, Argentina. </span>
+        <ul class="contact__list">
+          <li>
+            <p><i class="fa-solid fa-location-dot"></i> Calle falsa 123</p>
+          </li>
+          <li>
+            <p><i class="fa-solid fa-phone"></i> 011 0101010101</p>
+          </li>
+          <li>
+            <a href="mailto:fermingonzalez011@gmail.com">
+              <i class="fa-regular fa-envelope"></i>
+              fermingonzalez011@gmail.com</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="contact__section-img">
+        <img src="/imgs/FJwUziqXMAE1DHa.jfif" alt="" />
       </div>
     </section>
-    <section id="hero__section-bio">
-      <h2>@About</h2>
-      <ul class="list-bio">
-        <li>
-          Fermín is currently a 1st-year programming student at the
-          <a class="link" href="http://www.sistemas-utnfra.com.ar/#/home" target="_blank">UTN FRA</a>
-          and also a fullstack web development student at
-          <a class="link" href="https://nucba.com.ar/codingbootcamp">NUCBA</a>.
-        </li>
-        <li>
-          He is currently working with C# making desktop applications using
-          .NET and Windows Forms, and creating his first static websites with
-          HTML and CSS, that soon will be posted over
-          <a class="link" href="/">here</a>...
-        </li>
-      </ul>
-    </section>
-  </main>
-</body>
-
+    <footer class="footer">
+      <div class="footer__logo">
+        <a href="/"> FG </a>
+      </div>
+    </footer>
+  </body>
 </html>
